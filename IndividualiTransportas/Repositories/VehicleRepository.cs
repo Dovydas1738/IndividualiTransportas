@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IndividualiTransportas.Contracts;
 using IndividualiTransportas.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace IndividualiTransportas.Repositories
 {
-    public class VehicleRepository
+    public class VehicleRepository : IVehicleRepository
     {
         public async Task<List<Car>> ReadAllCars()
         {

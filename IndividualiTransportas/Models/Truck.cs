@@ -18,5 +18,10 @@ namespace IndividualiTransportas.Models
             MaxLoad = maxLoad;
 
         }
+
+        public override string ToString()
+        {
+            return $"{Maker} {Model} {Year} Max load: {MaxLoad} kg.";
+        }
     }
 }

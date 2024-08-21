@@ -17,5 +17,11 @@ namespace IndividualiTransportas.Models
             Year = year;
             DoorCount = doorCount;
         }
+
+        public override string ToString()
+        {
+            return $"{Maker} {Model} {Year} Door Count: {DoorCount}.";
+        }
+
     }
 }
